@@ -1,0 +1,8 @@
+sel disk 1
+clean
+create partition primary size=1000
+format fs=fat32 label=FAT32 quick
+assign letter=E
+create partition primary
+format fs=ntfs label=NTFS quick
+assign letter=F
